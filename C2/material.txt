@@ -1,0 +1,60 @@
+Class Resume
+1. Growth of Data
+    According to an Accenture study, þĀ% of enterprise executives agree
+    that companies that do not embrace Big Data will lose their competitive
+    position and could face extinction. Even more, ÿú%, have pursued Big
+    Data projects to seize a competitive edge.
+2. Source of Data
+    - internal = company database
+    - public dataset
+3. Data Processing Flow
+    a. data source =  location where data that is being used originates from
+    b. landing area = area where we kept the source files from where the ETL tool
+                will be going to extract the data
+    c. staging area =  initial stage of the database where we just load into table
+                without applying any transformation or business rules.
+    d. data warehousing = repo that collect and manage data to get meaningful insight
+    e. data mart = part of data warehousing to manage specified department
+    f. data visualization = Representation of data and information in graphical way
+    *DS = e and f
+4. Methodology of data processing
+    batch processing = process data periodically (Hours, Days,Weeks, Months, Years)
+    steam processing = process data in real time (automated task and pipeline)
+5. Data storing and load
+    full load = entire data loaded
+    incremental load = with an interfal
+3. Data Analyst Daily Stack
+    - collaboration with other department [Slack, Gmeet, Jira, Asana, etc.]
+    - management of data assets [Data Warehouse Bigquery, AWS, Oracle, etc.]
+    - Analyzing information [Excel, Gsheet, SQL, Python]
+    - data reporting and dashboarding [Google Data Studio, Tableau, and Power BI]
+4. Working Type of Infrastructure
+    On-premise
+    Cloud   
+5. Key Performance Indicators for Data Analyst
+    Profit = Revenue - Expense
+    DA concern to Revenue
+    example in e-commerce KPi = GMV(Gross Merchandise Value) and TPV(Total Processing Value)
+
+Assignment
+https://docs.google.com/spreadsheets/d/17iVxncj0IUX-MMcIG4i7jK_Pjn2yoY0t/edit#gid=1967605396
+1. What percentage of revenue growth rate from 2020 to 2021?
+    2020	    1331.077788
+    2021	    3257.178218
+    growth rate	1.447023193
+2. What percentage of actual buyer growth rate from 2020 to 2021?
+    2020	    2422
+    2021	    5468
+    growth rate	1.257638315
+3. Is the success rate of orders in 2021 decreased from 2020?
+    2020	88.768
+    2021	89.81456954
+4. How many products got returned in 2021?
+    returned transaction	    769
+    product returned	        853
+    unique product returned	    842    
+5. What is the TOP 3 expensive product that was successfully sold in 2021?
+    sale_price	    product_id	COUNT of sold
+    537.2850014	    25348	    1
+    454.209	        22927	    1
+    434.0749978	    5213	    1
