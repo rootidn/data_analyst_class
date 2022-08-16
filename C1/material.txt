@@ -1,0 +1,44 @@
+Class Resume
+1. The reason why we use data nowadays
+    ubiquitos, the "new oil", can store any kind of information, data driven solution 
+2. Data Analytics Definition
+    Data analytics is the science of analyzing raw data to make conclusions about that information.
+    Data Analyst help a business optimize its performance.
+3. Day-to-Day Data Analyst
+    20% Colaborate with other department
+    10% Management of data
+    10% Analyzing information
+    50% Data reporting on dashboard 
+4. Data Analyst in Data Team
+    Centralized model = DA and DE in one group
+    Embedded model = DA spread each department
+5. Data Analyst first Study Cases
+    Extract insight from data using google-spreadsheet:
+    - sort
+    - filter
+        by values
+        by condition
+    - pivot table
+
+Assignment
+https://docs.google.com/spreadsheets/d/1y9R48rBRsizNIlbGQoCS9tT1k1-_rWpN/edit#gid=307677095
+1. Who is the most expensive spending in the UK? Please provide the Customer ID
+    if spending = quantity * unitprice
+    ID = 17850	spending = 2038406.59    
+2. What is the most expensive product that selled in the UK? Please provide the product description
+    22655 - VINTAGE RED KITCHEN CABINET - 295 euro
+3. What is the TOP 10 of the most selling products in the UK? Please provide the product description
+    84077	WORLD WAR 2 GLIDERS ASSTD DESIGNS	3456
+    22189	CREAM HEART CARD HOLDER	            2141
+    22188	BLACK HEART CARD HOLDER	            2088
+    84950	ASSORTED COLOUR T-LIGHT HOLDER	    1836
+    21915	RED HARMONICA IN BOX	            1652
+    85123A	WHITE HANGING HEART T-LIGHT HOLDER	1426
+    84879	ASSORTED COLOUR BIRD ORNAMENT	    1265
+    82484	WOOD BLACK BOARD ANT WHITE FINISH	1169
+    21137	BLACK RECORD COVER FRAME	        1141
+    85099B	JUMBO BAG RED RETROSPOT	            1108
+4. How many customers are there in the UK? Please provide the Customer ID in count unique mode
+    394
+5. How many transactions were there on 5 December 2010 in the UK? Please provide the InvoiceNo in count unique mode
+    78
