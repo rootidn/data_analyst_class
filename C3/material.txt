@@ -1,0 +1,189 @@
+Class Resume
+1. What is Data and Analytics mean.
+    Data
+        data is individual pieces of factual information recorded 
+        and used for the purpose of analysis
+    Features
+        an individual measurable property(column) or
+        characteristic of a phenomenon/event
+        *not all feature are matter, based on business needs
+    Analytics
+        process of discovering, interpreting, and communicating significant patterns in data. 
+        Analytics help us to see insights and meaningful data that remains undetected
+    Type of Analytics
+        a.  Descriptive Analytics
+            Answers the “what happened” by
+            summarizing past data, usually in the form of
+            dashboards. Track KPI.
+        b.  Diagnostic Analytics
+            Answers the “why did it happened” by
+            drills down to find the pattern of insight
+            from descriptive analytics. 
+        c.  Predictive Analytics
+            Answers the “what is likely to
+            happen” by utilize the previous data
+            to make a prediction about the future outcomes
+            *Often to use a statistical approach, rule-based, and machine learning.
+        d.  Prescriptive Analytics
+            Answers the “what do I need to do”
+            by compose the best action and
+            recommendation from the predictive
+            analytics. 
+        *complexity and value increase for each type
+2. Manipulating data
+    Joining data
+        VLOOKUP in Google Spreadsheets 
+            Formula: 
+                =VLOOKUP(search_key, range, index, [is_sorted])
+                =VLOOKUP($B2,'Customers Sheet'!A:B,2,0)
+            details:
+                Search Key = is the value that will be search in given range (current sheets)
+                Range = is the area of search key will be search (another sheets)
+                Index = is returned value from a selected area in range (another sheets).
+                        column 1 is index 1
+                Is sorted = TRUE(1), FALSE(0)
+    Cleaning data
+    Transforming data for ML model
+3. The fundamental of statistics.
+    Overview
+        statistic help you:
+        ● use the proper methods to collect the data,
+        ● employ the correct analyses, and
+        ● effectively present the results
+    Data Type
+        Categorical Data type
+            Nominal
+                for labeling/naming the variables.
+                E.g. hair color, months name (jan, feb,...), gender, marital status, etc.
+            Ordinal
+                shows where is a number is in order in a sequence format.
+                E.g. class rank(first, second, third), reviews rating(1-5), grades(A,B,C), etc.
+        Numerical Data type
+            Discrete
+                count that involves only integers
+                E.g. the number of student in a class
+            Continue
+                could be meaningfully divided into finer levels
+                E.g. the average height of the student in a class
+    Type of statistic
+        Descriptive
+            summarize the characteristics of data by collecting the chosen sample from 
+            the population and describe it using of its "central tendency" and "variability"
+            > measure of central tendency
+                - mean (rata-rata)
+                    spreadsheets: MODE(value1, [value2, ...])
+                - median (nilai tengah)
+                    spreadsheets: MEDIAN(valueø, [valueù, ...])
+                - mode (modus)
+                    spreadsheets: AVERAGE(valueø, [valueù, ...])
+            > measure in variability
+                - range (jangkauan)
+                    spreadsheets:
+                        substract Max() and Min() function
+                        MAX(value1, [value2, …]) - MIN(value1,[value2, …])
+                - variance
+                    SD without squared
+                    spreadsheets: VAR(value1, [value2, …])
+                - standard deviation(SD)
+                    SD is to measure how disperse the data are to the mean.
+                    deviation is the distance between an observed value and the mean value. 
+                    squared to tackle negative number and ambiguity
+                    *low SD (approaching zero) = data are clustered around the mean
+                    *high SD (leaving zero) = data are more spreadout
+                    spreadsheets: STDEV(value1, [value2, …])
+        Inferential
+            to make an “Inference” or “Prediction” by using the chosen
+                sample to make generalizations about a population.
+            main focus:
+                - estimating the parameter
+                - hypothesis testing
+    Probability
+        Overview
+            Probability is the measure of the likelihood that an event will occur in a Random Experiment.
+            quantified as a number between 0 (impossibility) and 1 (certainty). 
+        Probability distribution
+            tells you what is all the probability of an event looks like.
+            example
+                two standard six-sided dice
+                    6 * 6 = 36
+                    number 7 appearance = (1+6, 6+1, 5+2, 2+5, 3+4, 4+3) = 6
+                    possibility = 6/36 = 1/6
+    Shape of distribution
+        Skewness
+            skewness is a degree of asymmetry observed in a probability distribution 
+            that deviates from the symmetrical normal distribution (bell curve) 
+            bell curve is mean=median=mode
+            note:
+                if skewness 
+                    < -1 = highly negative skewed
+                    > 1 = highly positive skewed
+                if skewness 
+                    between -1 and -0.5 = moderately negative skewed
+                    between 0.5 and 1 = moderately positive skewed
+                if skewness between -0.5 and 0.5 = approx symmetrical (bell curve)
+            spreadsheets:
+                SKEW(value1, [value2, …])
+        Kurtosis
+            Kurtosis refers to the degree of presence of outliers in the distribution. 
+            for masuring data is heavy-tailed or light-tailed in a normal distribution.
+            type:
+                leptokurtic (heavy-tailed distribution)
+                    positive kurtosis, kurt > 0
+                mesokurtic
+                    same as normal distribution, kurt = 0
+                platykurtic (light tailed distribution)
+                    negative  kurtosis, kurt < 0
+            application:
+                in finance kurtosis is used as a measure of financial risk
+                leptocurtic = high level of risk for an investment
+                    because high probabilities for extremely large and extremely small returns
+                platykurtic = moderate level of risk
+                    because extreme returns are relatively low and more dispersed distribution
+            spreadsheets:
+                KURT(value1, value2, …)
+    Probability distribution
+        a. Normal Distribution
+            Height of People and IQ Scores
+        b. Binomial Distribution
+            Win/lose the lottery ticket (multiple trial)
+        c. Poisson Distribution
+            The number of thefts reported in an area on a day.
+        d. Uniform Distribution
+            Rolling a single dice (equally distributed)
+        e. Bernoulli Distribution
+            A student will pass or fail an exam (single trial)
+        f. Exponential Distribution
+            The human life expectancy (if the
+            human are a smoker, its likely to have a shorter life expectancy
+            depending on the severity).
+4. Overview of data visualization in Google Spreadsheets.
+    Bar chart
+        for comparison between the categorical and numerical value
+    Line chart
+        display a quantitative data both discrete and continuous random
+        variable within continuous time period.
+    Histogram
+         to know your data distribution within an interval.
+    Scatter plot
+         to know the correlation or relationship between dependent and
+        independent variables placed in a cartesian coordinates.
+5. Implementing descriptive statistics in Google Spreadsheets.
+    installing Type XLMiner Analysis ToolPak
+
+Assignment
+https://docs.google.com/spreadsheets/d/1J-DVjyaUfP7w9ndGOoX1WuSCICf7kfba/edit#gid=1124380408
+1. VLOOKUP TASK
+    =VLOOKUP(B2, 'Sales Team Sheet'!A:B, 2, 0)
+    =VLOOKUP(F2, 'Store Locations Sheet'!A:B, 2, 0)
+    =VLOOKUP(H2, 'Products Sheet'!A:B, 2, 0)
+2. DESCRIPTIVE STATISTICS TASK
+    =AVERAGE(A2:A1000)
+    =MEDIAN(A2:A1000)
+    =MODE(A2:A1000)
+    =MAX(A2:A1000)-MIN(A2:A1000)
+    =VAR(A2:A1000)
+    =STDEV(A2:A1000)
+    =SKEW(A2:A1000)
+    =KURT(A2:A1000)
+3. CORRELATION TASK
+    =CORREL(A2:A368,B2:B368)
