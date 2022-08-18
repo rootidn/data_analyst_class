@@ -138,7 +138,6 @@ Class Resume
             d. Robust for Big Data (in terms of scalability, availability, and security).
             e. Pay As You Go.
             f. Access Anytime, Anywhere.
-
     5. Making your first SQL query on Google BigQuery
 
 Assignment
