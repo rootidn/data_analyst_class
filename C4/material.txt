@@ -1,0 +1,148 @@
+C4 - Introduction to Database and SQL
+
+Class Resume
+    1. Database
+        Form of data
+            Structured data = data stored in database
+            Unstructured data
+        Database definition
+            Database is an organized collection of structured information or data,
+                managed by Database Management Systems (DBMS).
+        Database Type
+            > Relational DB
+                - Items stored are organized as a set of tables within
+                    columns and rows, each tables is relate with each other.
+                - using SQL programming language.
+                - RDMS = MySQL, OracleDB, and Microsoft SQL Server.
+                - homogeneus (only 1 data type in a column)
+                    *spreadsheets are heterogeneus
+            > NoSQL DB
+                - allows unstructured and semistructured data to be stored and manipulated
+                - E.g = MongoDB (document-based), 
+                    Cassandra (column-based),
+                    Redis (key-value), and Neo4J (graph-based).
+            > Cloud DB
+                -  collection of data, either structured or unstructured,
+                    that resides on a private, public, or hybrid cloud computing platform.
+                - two type:
+                    traditional
+                    database as a service (DBaaS)
+                - E.g = BigQuery (relational), 
+                    Cloud Firestore (document-based), and
+                    Cloud Bigtable (key-value).
+    2. Database Schema and ER Diagram
+        Component
+            Entities = set of object or a set of attributes
+            Attributes = characteristic of each entity
+            Relationship = Is a connection between one or more entities
+            "customers" entities have ["id", "name"] attr and have relation with "order" entities
+        Type of entities
+            Weak entities
+                rely on the strong entity to ensure the existence of the weak entity
+                doesnt have primary key
+            Strong entities
+                 its existence doesn’t dependant on any other entity
+        Type of attribute
+            Derived attribute
+                derivative (turunan) from other attributes,
+                often in the form of calculated result between 1 or more attributes
+            Multi-value attribute
+                takes up more than one for each entity, E.g. email
+            Key attributes
+                uniquely identifies each entity in the entity set.
+        Type of relationship
+            One to one
+            One to many
+            Many to many
+        ER Diagram
+            Crows foot
+            Diamond
+    4. SQL 
+        Overview
+            Programming language that allows communication with databases in order 
+            to manage all the data they contain.
+        Importance 
+            As a data analyst, SQL is important because it can interact directly with the data.
+            Hence, we can get to know more about the real-time data from a data warehouse
+            (Google BigQuery) without having to wait from others for converting the 
+            data format to be analyzed. 
+    3. SQL Commands
+        General type
+            ● Data definition language (DDL)
+                define and change the structure of the database in the form of table.
+                such as creating, altering, dropping, and truncating the table.
+            ● Data manipulation language (DML)
+                used for manipulating the data inside of the databases, not making an impact
+                to the database schema and table configuration
+                such as insert, update, and delete data from table
+            ● Data control language (DCL)
+                to control the permission of the database to be accessed only with
+                the authorized users. 
+                lest common used by DA.
+        Additional Type:
+            ● Data Query Language (DQL)
+                used to make a query using SQL Programming Language.
+                DQL won’t affect the records of the table even the database and table schema.
+                The only statement in DQL is SELECT
+            ● Transaction Control Language
+        SQL constaints
+            NOT NULL        Ensures that a column cannot have a NULL value.
+            UNIQUE          Ensures that all values in a column are different.
+            PRIMARY KEY     A combination of a NOT NULL and UNIQUE.
+            FOREIGN KEY     Prevents actions that would destroy links between tables.
+            CHECK           Ensures that the values in a column satisfies a specific condition.
+            DEFAULT         Sets a default value for a column if no value is specified.
+            CREATE INDEX     Used to create and retrieve data from the database very quickly.
+        Data types
+            data types is  depending on which database
+            engine and environment that we want to use
+        DDL Statement
+            CREATE 
+                create db
+                    CREATE DATABASE Database_Name;
+                create table with constraint
+                    CREATE TABLE Table_Name(Column_Name1 DATATYPE CONSTRAINT, …);
+            ALTER
+                rename column
+                    ALTER TABLE Table_Name RENAME COLUMN Old_Column_Name TO New_Column_Name; 
+                add new column
+                    ALTER TABLE Table_Name ADD Column_Name DATATYPE CONSTRAINT; 
+            DROP
+                DROP TABLE Table_Name;
+        DML Statement
+            INSERT
+                exact value for each column
+                    INSERT INTO Table_Name VALUES (Column1_Value, Column2_Value,...); 
+                with specified column
+                    INSERT INTO Table_Name (Column2_Name, Column4_Name)
+                        VALUES (Column2_Value, Column4_Value); 
+            UPDATE
+                UPDATE Table_Name SET Column1 = Value1, Column2 = Value2,... WHERE Condition; 
+            DELETE
+                DELETE FROM Table_Name WHERE Condition; 
+        DCL
+            Grant : Grant privileges to the user for the databases and tables.
+            Revoke : Revoke the current privileges from users for the databases and tables.
+        DQL statement
+            SELECT Column_Name1, Column_Name2,...
+                FROM Table_Name WHERE Condition; 
+    4. Google BigQuery
+        Overview
+            GCP provide a Google BigQuery as a Data Warehousing services
+            To help DA with their needs such as real-time analytics, 
+                predictive analytics, and reporting.
+        Features
+            a. Easy to integrate within google environment.
+            b. Real-time analytics.
+            c. Using a standard SQL.
+            d. Robust for Big Data (in terms of scalability, availability, and security).
+            e. Pay As You Go.
+            f. Access Anytime, Anywhere.
+
+    5. Making your first SQL query on Google BigQuery
+
+Assignment
+1. Create Table
+2. Insert Into
+3. Delete Statement
+4. Select Statement
